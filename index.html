@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="GirarDados()">Rodar</button>
+    <script>
+function d6() {
+      return Math.floor(Math.random() * 6) + 1;
+    }
+
+    function d8() {
+      return Math.floor(Math.random() * 8) + 1;
+    }
+
+    function d20() {
+      return Math.floor(Math.random() * 20) + 1;
+    }
+        function GirarDados(){
+          const resultado = d6();
+          const resultado2 = d8 ();
+          const resultado3 = d20 ();
+          console.log("D6:", resultado);
+        console.log("D8:", resultado2);
+        console.log("D20:", resultado3);
+        }
+        
+        console.log(d6())
+        console.log(d8())
+        console.log(d20())
+    </script>
+</body>
+</html>
